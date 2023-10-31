@@ -46,6 +46,7 @@ void insertion_sort(int arr[], int n)
         }
     }
 }
+// merge sort , divide & merge
 void merge(vector<int> &arr, int low, int mid, int high)
 {
     vector<int> temp;
@@ -89,6 +90,7 @@ void merge_sort(vector<int> &arr, int low, int high)
     merge_sort(arr, mid + 1, high);
     merge(arr, low, mid, high);
 }
+// quicksort : pick a pivot and sort the array on the basis of the pivot
 int partition(vector<int> &arr, int low, int high)
 {
     int pivot = arr[low];
